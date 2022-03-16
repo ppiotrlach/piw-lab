@@ -1,0 +1,12 @@
+body {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+body>* {
+    margin: auto;
+    width: 500px;
+    display: block;
+    overflow: auto;
+}
