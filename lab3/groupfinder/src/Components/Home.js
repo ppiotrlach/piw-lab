@@ -13,6 +13,7 @@ function Home({ wantedGroups, onSendMsg }) {
         setSearchFor(event.target.form.searchfor.value);
     }
 
+
     return (
         <>
 
@@ -32,12 +33,12 @@ function Home({ wantedGroups, onSendMsg }) {
                 {(wantedGroups.map((grp, idx) => {
                     if (searchFor === "") {
                         return (
-                            <Notice key={idx} notice={grp} onSendMsg={onSendMsg()} />);
+                            <Notice key={idx} notice={grp} onSendMsg={onSendMsg} />);
                     }
                     else {
                         if (grp.description.includes(searchFor) || grp.tags.includes(searchFor) || grp.classes.includes(searchFor)) {
                             return (
-                                <Notice key={idx} notice={grp} onSendMsg={onSendMsg()} />);
+                                <Notice key={idx} notice={grp} onSendMsg={onSendMsg} />);
                         }
                     }
                 }))}

@@ -38,7 +38,7 @@ function NoticeAdder({ onNoticeAdd }) {
     }
 
     onNoticeAdd(wantedGroup);
-    alert("notice " + name + " successfully created, check home page");
+    alert("notice \"" + classes + "\" successfully created, check home page");
 
     event.target.form.name.value = "";
     event.target.form.description.value = "";
