@@ -14,17 +14,17 @@ function App() {
   const [wantedGroups, setWantedGroups] = useState([
     {
       name: "Piotrek IGM",
-      description: "Grupa zajęciowa z wtorku 9.15 tydzień parzysty. Temat do dogadania, jestem otwarty na propozycje.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       email: "p@gmail.com",
-      tags: "ucisw2 projekt wtorek zdanko",
-      classes: "UCISW 2 PROJEKT"
+      tags: "ucisw2 project tuesday",
+      classes: "UCISW 2 PROJECT tuesday"
     },
     {
-      name: "Mientus PDW",
-      description: "Środa TP 15.15. PILNE!!!",
-      email: "p@gmail.com",
-      tags: "ripo projekt środa asap szybko na teraz",
-      classes: "Rozpoznawanie i przetwarzanie obrazów - PROJEKT [ASAP!1!1!!]"
+      name: "Mientus2000",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      email: "m@gmail.com",
+      tags: "ripo project wednesday asap",
+      classes: "RIPO - project"
     }
   ]);
 
