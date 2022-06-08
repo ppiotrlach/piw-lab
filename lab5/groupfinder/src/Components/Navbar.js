@@ -11,11 +11,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from "react-router-dom";
 
 import { auth } from '../Firebase/firebase';
-import { logInWithGoogle, logOut } from "../Firebase/users";
+import { logInWithGoogle, logOut, logInWithFacebook } from "../Firebase/users";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 function Navbar() {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
 
     return (
@@ -39,8 +39,14 @@ function Navbar() {
                     <Button color="inherit" component={Link} to="/">Home</Button>
                     <Button color="inherit" component={Link} to="/add">Add notice</Button>
 
-                    {!user ? <Button onClick={logInWithGoogle}>sign in with google</Button> : <Button onClick={logOut}>Log out {user.displayName}</Button>}
-
+                    {!user ?
+                        <>
+                        <Button onClick={logInWithGoogle}>sign in with google</Button>
+                        <Button onClick={logInWithFacebook}>sign in with fb</Button>
+                        </>
+                    :
+                        <Button onClick={logOut}>log out</Button>
+                    }
                     
                 </Toolbar>
             </AppBar>
